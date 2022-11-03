@@ -63,7 +63,7 @@ The content-type should be ``application/x-www-form-urlencoded``, with the follo
         ]
     }
 
-``The ``phone`` should start with ``07`` ``
+The ``phone`` should start with ``07``
 
 A ``200`` status code will be returned for a successful API response will a response data as follows:
 
