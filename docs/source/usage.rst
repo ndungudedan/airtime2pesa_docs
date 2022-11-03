@@ -23,6 +23,7 @@ The content-type should be ``application/x-www-form-urlencoded`` with a payload 
     "client_id": "your-client-id",
     "client_secret": "your-client-secret"
 }
+
 ```
 If successful the api responds with the following result:
 
@@ -33,6 +34,7 @@ If successful the api responds with the following result:
    "token_type":"bearer",
    "scope":null
 }
+
 ```
 
 If an error occurs, the api responds with a ``400`` status code with the following payload:
@@ -42,6 +44,7 @@ If an error occurs, the api responds with a ``400`` status code with the followi
     "error": "invalid_client",
     "error_description": "The client credentials are invalid"
 }
+
 ```
 
 
@@ -59,6 +62,7 @@ The content-type should be ``application/x-www-form-urlencoded``, with the follo
        }
     ]
 }
+
 ```
 
 The ``phone`` should start with ``07``
@@ -69,6 +73,7 @@ A ``200`` status code will be returned for a successful API response will a resp
 {
     "message": "Transaction Iniiated Successfully"
 }
+
 ```
 
 Any API error will respond with a ``500`` status code with a message of the error:
@@ -77,6 +82,7 @@ Any API error will respond with a ``500`` status code with a message of the erro
 {
     "message": "Insufficient Float Balance"
 }
+
 ```
 
 Checking Float Balance
@@ -88,6 +94,7 @@ To check your business float balance, hit the ``check-balance`` endpoint with th
 {
     "access_token": "your-access-token"
 }
+
 ```
 
 The API responds with the following sample data:
@@ -96,6 +103,7 @@ The API responds with the following sample data:
 {
     "balance": 500
 }
+
 ```
 
 Topping Up Float Balance
@@ -109,6 +117,7 @@ The ``/topup`` API endpoint initiates an STKPUSH request to the provided phone n
     "phone": "070000000",
     "amount": 100
 }
+
 ```
 
 If the request is successful, the API responds with a ``200`` status code with the following data:
@@ -117,6 +126,7 @@ If the request is successful, the API responds with a ``200`` status code with t
 {
     "message":"Transaction Iniiated Successfully"
 }
+
 ```
 
 In the event the API fails a  ``500`` status code is returned with the following data:
@@ -125,4 +135,5 @@ In the event the API fails a  ``500`` status code is returned with the following
 {
     "message":"Transaction Failed"
 }
+
 ```
