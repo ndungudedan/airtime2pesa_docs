@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Airtime2Pesa'
+copyright = '2022, Airtime2Pesa'
+author = 'Dedan'
 
 release = '0.1'
 version = '0.1.0'
