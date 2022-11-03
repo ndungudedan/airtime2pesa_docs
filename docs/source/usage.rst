@@ -17,25 +17,26 @@ you need to first get an access token by hitting the ``/token`` endpoint:
 
 The content-type should be ``application/x-www-form-urlencoded`` with a payload of:
 
-```
-{
-    "grant_type": "client_credentials",
-    "client_id": "your-client-id",
-    "client_secret": "your-client-secret"
-}
+.. code-block:: console
 
-```
+
+    {
+        "grant_type": "client_credentials",
+        "client_id": "your-client-id",
+        "client_secret": "your-client-secret"
+    }
+
 If successful the api responds with the following result:
 
-```
-{
-   "access_token":"03807cb390319329bdf6c777d4dfae9c0d3b3c35",
-   "expires_in":3600,
-   "token_type":"bearer",
-   "scope":null
-}
+.. code-block:: console
 
-```
+    {
+       "access_token":"03807cb390319329bdf6c777d4dfae9c0d3b3c35",
+       "expires_in":3600,
+       "token_type":"bearer",
+       "scope":null
+    }
+
 
 If an error occurs, the api responds with a ``400`` status code with the following payload:
 
