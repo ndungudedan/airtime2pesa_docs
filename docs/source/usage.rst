@@ -38,7 +38,7 @@ If successful the api responds with the following result:
     }
 
 
-If an error occurs, the api responds with a ``400`` status code with the following payload:
+If an error occurs, the api responds with the following payload:
 
 .. code-block:: console
 
